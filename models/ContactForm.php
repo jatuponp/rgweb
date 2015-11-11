@@ -49,7 +49,7 @@ class ContactForm extends Model
     public function contact($email)
     {
         if ($this->validate()) {
-            Yii::$app->mailer->compose()
+            Yii::$app->mail->compose()
                 ->setTo($email)
                 ->setFrom([$this->email => $this->name])
                 ->setSubject($this->subject)
@@ -57,7 +57,8 @@ class ContactForm extends Model
                 ->send();
 
             return true;
+        } else {
+            return false;
         }
-        return false;
     }
 }
