@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="keywords" content="">
+
+	<title>WS-Estate | A Real Estate HTML Template</title>
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+	<!-- COLORS -->
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>	
+
+    <div id="loader">
+        <div class="loader-container">
+            <img src="images/ws.gif" alt="" class="loader-site">
+        </div>
+    </div>
+    
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Log in</h4>
+				</div> <!-- /.modal-header -->
+				<div class="modal-body">
+					<form role="form">
+						<input type="text" class="form-control" id="uLogin" placeholder="Login">
+						<input type="password" class="form-control" id="uPassword" placeholder="Password">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Remember me
+							</label>
+						</div> <!-- /.checkbox -->
+					</form>
+				</div> <!-- /.modal-body -->
+				<div class="modal-footer">
+					<button class="form-control btn btn-primary">Login Account</button>
+				</div> <!-- /.modal-footer -->
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="wrapper">
+	    <div class="topbar clearfix">
+	        <div class="container">
+	        	<div class="row">
+		            <div class="col-md-4 col-sm-4 col-xs-12">
+						<span class="social-icons">
+							<a class="facebook" href="#" title=""><i class="fa fa-facebook"></i></a>
+							<a class="twitter" href="#" title=""><i class="fa fa-twitter"></i></a>
+							<a class="google-plus" href="#" title=""><i class="fa fa-google-plus"></i></a>
+							<a class="pinterest" href="#" title=""><i class="fa fa-pinterest"></i></a>
+							<a class="linkedin" href="#" title=""><i class="fa fa-linkedin"></i></a>
+							<a class="instagram" href="#" title=""><i class="fa fa-instagram"></i></a>
+						</span><!-- end social -->
+		            </div><!-- end right -->
+		            <div class="col-md-8 col-sm-8 col-xs-12 text-right nopadding">
+		                <ul class="topbar-drops list-inline">
+		                    <li><i class="fa fa-phone"></i> 1800-3456-7891</li>
+		                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-dollar"></i> Dollar</a>
+		                        <ul class="dropdown-menu" role="menu">
+		                            <li><a href="#">Euro</a></li>
+		                            <li><a href="#">Rupi</a></li>
+		                            <li><a href="#">Dinnar</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i> English</a>
+		                        <ul class="dropdown-menu" role="menu">
+		                            <li><a href="#">Turkish</a></li>
+		                            <li><a href="#">Arabic</a></li>
+		                            <li><a href="#">Russian</a></li>
+		                            <li><a href="#">French</a></li>
+		                        </ul>
+		                    </li>
+		                    <li><i class="fa fa-sign-in"></i> <a href="#" data-toggle="modal" data-target="#myModal">Customer Login</a></li>
+		                </ul><!-- end list-style -->
+		            </div><!-- end right -->
+				</div><!-- end row -->
+	        </div><!-- end container -->
+	    </div><!-- end topbar -->
+
+		<header class="header yamm">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" data-toggle="collapse" data-target="#navbar-collapse-2" class="navbar-toggle">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="WS Estate"></a>
+					</div><!-- end navbar-header -->
+					<div id="navbar-collapse-2" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-left">
+							<li class="dropdown yamm-half"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Home <b class="fa fa-angle-down"></b></a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="yamm-content">
+											<div class="row">
+												<div class="col-md-4 col-sm-6 col-xs-12 ">
+													<div class="box">
+														<ul>
+															<li><a href="index-boxed.html">Home Boxed Version</a></li>
+															<li><a href="index-sidebar.html">Home Left Sidebar</a></li>
+															<li><a href="index-google-map.html">Home Google Map</a></li>
+															<li><a href="index1.html">Home Parallax Image</a></li>
+															<li><a href="index2.html">Home Parallax Video</a></li>
+															<li><a href="index3.html">Home Revolution Slider</a></li>
+															<li><a href="index5.html">Home Blogging Style</a></li>
+														</ul>
+													</div><!-- end box -->
+												</div><!-- end col -->
+												<div class="col-md-4 col-sm-6 col-xs-12 ">
+													<div class="box">
+														<ul>
+															<li><a href="index6.html">Home Version 6</a></li>
+															<li><a href="index7.html">Home Version 7</a></li>
+															<li><a href="index8.html">Home Version 8</a></li>
+															<li><a href="index9.html">Home Version 9</a></li>
+															<li><a href="index10.html">Home Version 10</a></li>
+															<li><a href="index11.html">Home Version 11</a></li>
+															<li><a href="index12.html">Home Version 12</a></li>
+														</ul>
+													</div><!-- end box -->
+												</div><!-- end col -->
+												<div class="col-md-4 col-sm-6 col-xs-12 ">
+													<div class="box">
+														<ul>
+															<li><a href="agents.html">Our Agents</a></li>
+															<li><a href="agent-single.html">Agent Single</a></li>
+															<li><a href="testimonials.html">Testimonials</a></li>
+															<li><a href="faqs.html">Friendly Questions</a></li>
+															<li><a href="contact.html">Contact Us</a></li>
+															<li><a href="sitemap.html">Sitemap</a></li>
+															<li><a href="elements.html">Elements</a></li>
+														</ul>
+													</div><!-- end box -->
+												</div><!-- end col -->
+											</div><!-- end row -->
+										</div><!-- end yamm-content -->
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Property <span class="fa fa-angle-down"></span></a>
+								<ul class="dropdown-menu">
+				            		<li><a href="property-list.html">Property List</a></li>
+				            		<li><a href="property-grid.html">Property Grid</a></li>
+				            		<li><a href="property-list-map.html">Property List Map</a></li>
+				            		<li><a href="property-grid-map.html">Property Grid Map</a></li>
+				            		<li><a href="property-single.html">Property Single</a></li>
+				            		<li><a href="property-single-alt.html">Property Single Alt</a></li>
+				         		</ul>
+				        	</li>
+							<li><a href="agents.html">Agents</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a class="btn btn-success" href="list-property.html">Submit Property <i class="fa fa-chevron-circle-right"></i></a></li>
+			            </ul>
+					</div>
+				</nav>
+			</div>
+		</header><!-- end header -->
+
+        <section class="section banner" style="background-image:url('upload/hero.jpg');" data-img-width="1688" data-img-height="470" data-diff="100">
+
+        </section><!-- end section -->
+
+        <div class="page-title white">
+            <div class="container">
+                <div class="title-area pull-left">
+                    <h2>Property Grid <small>Listed all our awesome Property items</small></h2>
+                </div><!-- /.pull-right -->
+                <div class="bread pull-right">
+					<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li class="active">Property Grid</li>
+					</ol>
+				</div><!-- end bread -->
+            </div>
+        </div><!-- end page-title -->
+
+        <section class="section grey">
+        	<div class="container">
+        		<div class="page-wrapper row">
+					<div class="view-type clearfix">
+						<a class="list" href="property-list.html"><i class="fa fa-list"></i></a>
+						<a class="grid active" href="property-grid.html"><i class="fa fa-th"></i></a>
+					</div>
+				    <div class="col-lg-12">
+				        <form class="detailedsearch" action="#" method="post">
+				            <div class="row">
+				            	<div class="col-md-9 col-sm-9 col-xs-12">
+				            		<div class="input-group">
+										<select class="selectpicker" data-style="btn-default" data-live-search="true">
+											<option>Location</option>
+											<option>Miami</option>
+											<option>Hawai</option>
+											<option>Paris</option>
+											<option>Istanbul</option>
+											<option>Bodrum</option>
+										</select>  
+										<select class="selectpicker" data-style="btn-default" data-live-search="true">
+											<option>Min Area</option>
+											<option>100 Sq Ft</option>
+											<option>200 Sq Ft</option>
+											<option>300 Sq Ft</option>
+											<option>400 Sq Ft</option>
+											<option>500 Sq Ft</option>
+											<option>1000+ Sq Ft</option>
+										</select>  
+										<select class="selectpicker" data-style="btn-default" data-live-search="true">
+											<option>Status</option>
+											<option>For Rent</option>
+											<option>For Sale</option>
+											<option>Daily Rent</option>
+										</select>  
+										<select class="selectpicker" data-style="btn-default" data-live-search="true">
+											<option>Bedrooms</option>
+											<option>4 Bedrooms</option>
+											<option>3 Bedrooms</option>
+											<option>2 Bedrooms</option>
+										</select> 
+										<select class="selectpicker" data-style="btn-default" data-live-search="true">
+											<option>Price</option>
+											<option>$1k - $500k</option>
+											<option>$500k - $1000k</option>
+											<option>$1000k - $1500k</option>
+											<option>$1500k - $2000k+</option>
+										</select>  
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-3 col-xs-12">
+						            <button id="search" data-style="slide-left" class="btn btn-success col-lg-2 col-md-2 col-sm-2 col-xs-12 pull-right" type="submit"> <i class="fa fa-search"></i>Search</button>
+					            </div>
+					        </div>
+				        </form>
+				    </div><!-- end well -->
+        		</div><!-- end page-wrapper -->
+
+        		<div class="property_wrapper_grid row">
+					<div class="property-list row-fluid">
+						<div class="col-md-3 col-sm-6 first">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/recent_01.png" alt=""></a>
+										<div class="box_type">$2.000.00</div>
+										<div class="status_type">For Rent</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Creative Home from NY</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/recent_02.png" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Professional Family Home</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/recent_03.png" alt=""></a>
+										<div class="box_type">$31.000.00</div>
+										<div class="status_type">For Rent</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> One + One Small Home</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6 last">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/recent_04.png" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Rent</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Recently Dream Miami</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6 first">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/recent_05.png" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Home of your dreams</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/recent_06.png" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Hanua Family Home</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/recent_07.png" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> 3+1 From Serdivan</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6 last">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/recent_08.png" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Paris Hilton One Day..</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6 first">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/home_01.jpg" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Home of your dreams</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/home_02.jpg" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Hanua Family Home</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/home_03.jpg" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> 3+1 From Serdivan</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+
+						<div class="col-md-3 col-sm-6 last">
+							<div class="owl-pro">
+								<div class="boxes nopadding">
+									<div class="boxes_img">
+										<a href="property-single.html"><img class="img-responsive" src="upload/home_04.jpg" alt=""></a>
+										<div class="box_type">$3.000.00</div>
+										<div class="status_type">For Sale</div>
+									</div>
+									<h2 class="title"><a href="property-single.html"> Paris Hilton One Day..</a> <small class="small_title">2307 New York City</small></h2>
+									<div class="boxed_mini_details1 clearfix">
+										<span class="garage first"><strong>Garage</strong><i class="icon-garage"></i> 1</span>
+										<span class="bedrooms"><strong>Beds</strong><i class="icon-bed"></i> 4</span>
+										<span class="status"><strong>Baths</strong><i class="icon-bath"></i> 2</span>
+										<span class="sqft last"><strong>Area</strong><i class="icon-sqft"></i> 325</span>
+									</div>
+								</div><!-- end boxes -->
+							</div><!-- end owl-pro -->
+						</div><!-- end col -->
+					</div><!-- end row -->
+        		</div>
+
+				<nav class="pagenation text-center">
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+        	</div><!-- end container -->
+        </section><!-- end section -->
+
+		<footer class="section footer">
+			<div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="widget clearfix">
+                            <div class="featured-posts">
+								<ul>
+									<li>
+										<a href="property-single.html"><img class="img-responsive alignleft" src="upload/home_01.jpg" alt=""></a>
+										<h4><a title="" href="property-single.html">One Day Rent Home</a></h4>
+										<div class="meta">
+											<div class="rating">
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+											</div>
+										</div><!-- end meta -->
+										<a class="readmore" href="property-single.html" title="">$210.00</a>
+									</li>
+									<li>
+										<a href="property-single.html"><img class="img-responsive alignleft" src="upload/home_02.jpg" alt=""></a>
+										<h4><a title="" href="property-single.html">Beautiful Family Home</a></h4>
+										<div class="meta">
+											<div class="rating">
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+											</div>
+										</div><!-- end meta -->
+										<a class="readmore" href="property-single.html" title="">$2310.00</a>
+									</li>
+									<li>
+										<a href="property-single.html"><img class="img-responsive alignleft" src="upload/home_03.jpg" alt=""></a>
+										<h4><a title="" href="property-single.html">Sea and Sun Family</a></h4>
+										<div class="meta">
+											<div class="rating">
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+											</div>
+										</div><!-- end meta -->
+										<a class="readmore" href="property-single.html" title="">$560.00</a>
+									</li>
+									<li>
+										<a href="property-single.html"><img class="img-responsive alignleft" src="upload/home_04.jpg" alt=""></a>
+										<h4><a title="" href="property-single.html">2015 Home Edition</a></h4>
+										<div class="meta">
+											<div class="rating">
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+												<span class='fa fa-star'></span>
+											</div>
+										</div><!-- end meta -->
+										<a class="readmore" href="property-single.html" title="">$210.00</a>
+									</li>
+								</ul>
+                            </div><!-- end featured-posts -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+
+				<hr>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3><i class="icon-mail"></i> Newsletter</h3>
+                                <hr>
+                            </div><!-- end widget-title -->
+                            <div class="newsletter_form clearfix"> 
+                                <p>Enjoy our newsletter to stay updated with the latest news on WS Estate.</p>  
+                                <form class="form-inline" role="form">
+                                    <div class="form-group">
+                                        <label for="newsletter_input" class="sr-only">Subscribe to Newsletter</label>
+                                        <input type="text" class="form-control" id="newsletter_input" placeholder="Enter your email">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">GO</button>
+                                </form>
+                                <span class="social-icons">
+                                    <a href="#" title=""><i class="fa fa-facebook"></i></a>
+                                    <a href="#" title=""><i class="fa fa-twitter"></i></a>
+                                    <a href="#" title=""><i class="fa fa-google-plus"></i></a>
+                                    <a href="#" title=""><i class="fa fa-pinterest"></i></a>
+                                    <a href="#" title=""><i class="fa fa-youtube"></i></a>
+                                    <a href="#" title=""><i class="fa fa-yelp"></i></a>
+                                    <a href="#" title=""><i class="fa fa-linkedin"></i></a>
+                                </span><!-- end social -->
+                            </div><!-- end blog_categories --> 
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3><i class="icon-cart"></i> Twitter Stream</h3>
+                                <hr>
+                            </div><!-- end widget-title -->
+                            <div class="twitter-widget clearfix">   
+								<ul class="twitter-posts">
+									<li><a href="#">New year bundle realease! <small>2 min ago - @envato</small></a></li>
+									<li><a href="#">Pasha going to 1000+ sales! <small>21 min ago - @templatevisual</small></a></li>
+									<li><a href="#">Please follow us on Envato! <small>1 hrs ago - @envato</small></a></li>
+								</ul><!-- end recent -->
+                            </div><!-- end blog_categories --> 
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3><i class="icon-cart"></i> From Gallery</h3>
+                                <hr>
+                            </div><!-- end widget-title -->
+                            <div class="instagram-widget clearfix">   
+								<ul>
+									<li><a href="#"><img src="upload/recent_01.png" alt=""></a></li>
+									<li><a href="#"><img src="upload/recent_02.png" alt=""></a></li>
+									<li><a href="#"><img src="upload/recent_03.png" alt=""></a></li>
+									<li><a href="#"><img src="upload/recent_04.png" alt=""></a></li>
+									<li><a href="#"><img src="upload/recent_05.png" alt=""></a></li>
+									<li><a href="#"><img src="upload/recent_06.png" alt=""></a></li>
+									<li><a href="#"><img src="upload/recent_07.png" alt=""></a></li>
+									<li><a href="#"><img src="upload/recent_08.png" alt=""></a></li>
+									<li><a href="#"><img src="upload/recent_01.png" alt=""></a></li>
+								</ul><!-- end recent -->
+                            </div><!-- end blog_categories --> 
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="widget clearfix">
+                            <div class="widget-title">
+                                <h3><i class="icon-cart"></i> Categories</h3>
+                                <hr>
+                            </div><!-- end widget-title -->
+                            <div class="blog_categories clearfix">   
+                                <ul>  
+                                    <li><a href="#">Real Estate <span>(21)</span></a></li>
+                                    <li><a href="#">Human Lifes <span>(12)</span></a></li>
+                                    <li><a href="#">Next Projects <span>(33)</span></a></li>
+                                    <li><a href="#">Guess You Like <span>(15)</span></a></li>
+                                    <li><a href="#">Cleranca <span>(11)</span></a></li>
+                                </ul>
+                            </div><!-- end blog_categories --> 
+                        </div><!-- end widget -->
+                    </div><!-- end col --> 
+                </div><!-- end row -->
+			</div><!-- end container -->
+		</footer><!-- end footer -->
+
+        <section class="copyrights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="copymessage clearfix">
+                            <p>Ideas and designed by <a href="#">WordPress Showcase</a></p>
+                        </div><!-- end copymessage -->
+                    </div><!-- end col -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <ul class="footer-menu clearfix pull-right">
+                            <li><a href="#" title="">Home</a></li>
+                            <li><a href="#" title="">Shop</a></li>
+                            <li><a href="#" title="">Terms & Usage</a></li>
+                            <li><a href="#" class="backtotop" title=""><i class="icon-up-open-1"></i></a></li>
+                        </ul><!-- end footer-menu -->
+                    </div><!-- end col -->  
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end conpyrights -->
+	</div><!-- end wrapper -->
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="js/carousel.js"></script>
+	<script src="js/rotate.js"></script>
+	<script src="js/custom.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+	<script src="js/jquery.geocomplete.js"></script>
+    <script src="js/logger.js"></script>
+    <script src="js/fileupload.js"></script>
+    <script>
+      $(function(){
+        var options = {
+          map: ".map_canvas"
+        };
+        $("#geocomplete").geocomplete(options)
+          .bind("geocode:result", function(event, result){
+            $.log("Result: " + result.formatted_address);
+          })
+          .bind("geocode:error", function(event, status){
+            $.log("ERROR: " + status);
+          })
+          .bind("geocode:multiple", function(event, results){
+            $.log("Multiple: " + results.length + " results found");
+          });
+        
+        $("#find").click(function(){
+          $("#geocomplete").trigger("geocode");
+        });
+        
+        $("#examples a").click(function(){
+          $("#geocomplete").val($(this).text()).trigger("geocode");
+          return false;
+        });
+      });
+    </script>
+
+</body>
+</html>
