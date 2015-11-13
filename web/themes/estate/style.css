@@ -77,7 +77,7 @@
 		background-size: cover;
 	}
 	h1,h2,h3,h4,h5,h6{ 
-		font-family: "Roboto", Helvetica, Arial, sans-serif;
+		font-family: 'thaisans_neueregular', "Roboto", Helvetica, Arial, sans-serif;
 		font-weight:normal;
 		position: relative;
 		padding: 0 0 10px 0;         

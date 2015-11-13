@@ -13,7 +13,7 @@ use yii\bootstrap\Modal;
  * @var yii\widgets\ActiveForm $form
  * @var app\models\LoginForm $model
  */
-$this->title = 'Menus Management';
+$this->title = 'บริหารเมนูเว็บไซต์';
 //$langs = ($_POST['Categories']['langs']) ? $_POST['Categories']['langs'] : 'thai';
 ?>
 <div class="row">

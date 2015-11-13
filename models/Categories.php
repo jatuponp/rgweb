@@ -53,7 +53,8 @@ class Categories extends \yii\db\ActiveRecord {
     }
 
     public function search() {
-        $langs = ($_POST['Categories']['langs']) ? $_POST['Categories']['langs'] : 'thai';
+        $request = \Yii::$app->getRequest()->post('Categories');
+        $langs = ($request['langs']) ? $request['langs'] : 'thai';
         $query = Categories::find()->where(['langs' => $langs])->orderBy('id');
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -68,9 +69,11 @@ class Categories extends \yii\db\ActiveRecord {
     public function makeDropDown($langs = null) {
         global $data;
         $data = array();
-        $data['0'] = '-- Top Level --';
+        $data['0'] = '-- Uncategorized --';
         if ($langs == null) {
-            $langs = ($_POST['Categories']['langs']) ? $_POST['Categories']['langs'] : ($_REQUEST['langs']) ? $_REQUEST['langs'] : 'thai';
+            $request = \Yii::$app->getRequest()->post('Categories');
+            $_l = \Yii::$app->getRequest()->getQueryParam('langs');
+            $langs = ($request['langs']) ? $request['langs'] : ($_l ? $_l : 'thai');
         }
         $parents = Categories::find()
                 ->where(['parent_id' => 0, 'langs' => $langs])
@@ -98,10 +101,11 @@ class Categories extends \yii\db\ActiveRecord {
         global $arr;
         //$data = array();
         $arr = array();
+        $request = \Yii::$app->getRequest()->post('Categories');
         if ($langs == null) {
-            $langs = ($_POST['Categories']['langs']) ? $_POST['Categories']['langs'] : 'thai';
+            $langs = ($request['langs']) ? $request['langs'] : 'thai';
         }
-        $cat = ($_POST['Categories']['parent_id']) ? $_POST['Categories']['parent_id'] : '0';
+        $cat = ($request['parent_id']) ? $request['parent_id'] : '0';
         $parents = Categories::find()
                 ->where(['parent_id' => $cat, 'langs' => $langs])
                 ->all()

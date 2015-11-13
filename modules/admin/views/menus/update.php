@@ -12,7 +12,7 @@ use yii\helpers\Url;
  * @var yii\widgets\ActiveForm $form
  * @var app\models\LoginForm $model
  */
-$this->title = 'Menus Management';
+$this->title = 'บริหารเมนูเว็บไซต์';
 ?>
 <div class="site-content">
     <?php

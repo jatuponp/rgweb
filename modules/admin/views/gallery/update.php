@@ -35,7 +35,6 @@ $this->title = 'อัลบั้มภาพ';
     <div class="dashboard_box" style="padding-top: 15px;">
     <div class="row">
         <div class="col-lg-12">
-            <?= $form->field($model, 'amphur')->dropDownList(\app\models\TblAmphur::makeDropDown(), [ 'style' => 'margin-right: 10px; width: 250px;']) ?>
             <?= $form->field($model, 'title')->input('text', ['style' => 'width: 500px;']) ?>
             <div class="form-group required" style="padding-left: 0px; padding-right: 0px;">
                 <label>คำอธิบายหมวดหมู่</label>

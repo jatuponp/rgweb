@@ -14,7 +14,7 @@ use dosamigos\ckeditor\CKEditor;
  * @var yii\widgets\ActiveForm $form
  * @var app\models\LoginForm $model
  */
-$this->title = 'Article Management';
+$this->title = 'เขียนบทความ';
 ?>
 <div class="article-content">
 

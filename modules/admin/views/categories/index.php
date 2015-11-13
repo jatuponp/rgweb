@@ -10,7 +10,7 @@ use yii\helpers\Url;
  * @var yii\widgets\ActiveForm $form
  * @var app\models\LoginForm $model
  */
-$this->title = 'จัดการหมวดหมู่บทความ';
+$this->title = 'บริหารหมวดหมู่บทความ';
 //$langs = ($_POST['Categories']['langs']) ? $_POST['Categories']['langs'] : 'thai';
 ?>
 <div class="row">

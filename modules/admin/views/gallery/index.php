@@ -31,10 +31,7 @@ $this->title = 'บริหารภาพกิจกรรม';
                 ?>
                 <div class="row">
                     <div class="col-lg-12">
-                        <?php
-                        echo $form->field($model, 'amphur')->dropDownList(\app\models\TblAmphur::makeDropDown(), [ 'style' => 'margin-right: 10px; width: 250px;', 'onchange' => 'form.submit();']);
-                        echo $form->field($model, 'langs')->dropDownList(\app\models\tblLangs::makeDropDown(), [ 'style' => 'width: 120px;', 'onchange' => 'form.submit();']);
-                        ?>
+                        <?= $form->field($model, 'langs')->dropDownList(\app\models\tblLangs::makeDropDown(), [ 'style' => 'width: 120px;', 'onchange' => 'form.submit();']); ?>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 10px;">
